@@ -127,17 +127,18 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="/#our-approach" className="flex items-center gap-2 group">
             <KoruLogo className="h-16 w-auto transition-transform group-hover:scale-105" />
           </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#evidence" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">The Science</a>
-            <a href="#architecture" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">Architecture</a>
-            <a href="#partners" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">Partners</a>
-            <a href="#contact" className="px-5 py-2.5 bg-koru-blue text-white font-heading font-bold text-sm rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20">
-              Schedule Demo
+            <a href="/#our-approach" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">Our Approach</a>
+            <a href="/#lighthouse-project" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">The Lighthouse Project</a>
+            <a href="/#insights" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">Insights</a>
+            <a href="/#about-us" className="font-heading font-bold text-sm text-gray-600 hover:text-koru-blue transition-colors">About Us</a>
+            <a href="/#contact" className="px-5 py-2.5 bg-koru-blue text-white font-heading font-bold text-sm rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20">
+              Contact Us
             </a>
           </div>
 
@@ -152,16 +153,17 @@ const App: React.FC = () => {
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg py-4 px-4 flex flex-col space-y-4">
-             <a href="#evidence" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">The Science</a>
-             <a href="#architecture" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">Architecture</a>
-             <a href="#partners" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">Partners</a>
-             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-koru-blue">Schedule Demo</a>
+             <a href="/#our-approach" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">Our Approach</a>
+             <a href="/#lighthouse-project" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">The Lighthouse Project</a>
+             <a href="/#insights" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">Insights</a>
+             <a href="/#about-us" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-gray-600">About Us</a>
+             <a href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="font-heading font-bold text-koru-blue">Contact Us</a>
           </div>
         )}
       </nav>
 
       {/* SECTION 1: HERO */}
-      <header className="relative w-full min-h-screen flex items-center pt-20 overflow-hidden">
+      <header id="our-approach" className="relative w-full min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Abstract Background */}
         <div className="absolute top-0 right-0 w-2/3 h-full bg-gradient-to-l from-blue-50/50 to-transparent z-0"></div>
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-koru-blue/5 rounded-full blur-3xl"></div>
@@ -186,11 +188,11 @@ const App: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a href="#contact" className="inline-flex items-center justify-center px-8 py-4 bg-koru-blue text-white font-heading font-bold rounded-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 group">
+              <a href="/#contact" className="inline-flex items-center justify-center px-8 py-4 bg-koru-blue text-white font-heading font-bold rounded-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 group">
                 Want to work with us
                 <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="#architecture" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 font-heading font-bold rounded-lg hover:border-koru-green hover:text-koru-green transition-colors">
+              <a href="/#lighthouse-project" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-gray-200 text-gray-700 font-heading font-bold rounded-lg hover:border-koru-green hover:text-koru-green transition-colors">
                 Explore Platform
               </a>
             </div>
@@ -260,8 +262,8 @@ const App: React.FC = () => {
         </div>
       </header>
 
-      {/* SECTION 2: EVIDENCE BASE */}
-      <section id="evidence" className="py-24 bg-koru-light relative">
+      {/* SECTION 2: INSIGHTS */}
+      <section id="insights" className="py-24 bg-koru-light relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-heading font-black text-3xl sm:text-4xl text-koru-slate mb-6">Why Initiatives Fail</h2>
@@ -374,8 +376,8 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 4: ARCHITECTURE (3 MODULES) */}
-      <section id="architecture" className="py-24 bg-white">
+      {/* SECTION 4: LIGHTHOUSE PROJECT (3 MODULES) */}
+      <section id="lighthouse-project" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <span className="text-koru-blue font-heading font-bold uppercase tracking-widest text-xs">The Methodology</span>
@@ -592,11 +594,11 @@ const App: React.FC = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
+      <footer id="about-us" className="bg-white border-t border-gray-200 pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-2">
-              <a href="#" className="inline-block mb-4">
+              <a href="/#our-approach" className="inline-block mb-4">
                  <KoruLogo className="h-10 w-auto" />
               </a>
               <p className="font-body text-gray-600 max-w-sm mb-6">
@@ -612,10 +614,10 @@ const App: React.FC = () => {
             <div>
               <h4 className="font-heading font-bold text-koru-slate mb-4">Platform</h4>
               <ul className="space-y-3 font-body text-sm text-gray-600">
-                <li><a href="#evidence" className="hover:text-koru-blue">The Science</a></li>
-                <li><a href="#architecture" className="hover:text-koru-blue">Architecture</a></li>
-                <li><a href="#partners" className="hover:text-koru-blue">Partners</a></li>
-                <li><a href="#" className="hover:text-koru-blue">API Documentation</a></li>
+                <li><a href="/#our-approach" className="hover:text-koru-blue">Our Approach</a></li>
+                <li><a href="/#lighthouse-project" className="hover:text-koru-blue">The Lighthouse Project</a></li>
+                <li><a href="/#insights" className="hover:text-koru-blue">Insights</a></li>
+                <li><a href="/#about-us" className="hover:text-koru-blue">About Us</a></li>
               </ul>
             </div>
 
